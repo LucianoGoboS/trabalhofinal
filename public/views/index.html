@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Criação de comentarios</title>
+    <script type="text/javascript" src="../javascript/jquery-lib.js"> </script>
+    <script type="text/javascript" src="../javascript/post-jquery.js"> </script>
+</head>
+
+<body>
+
+    <h1>Trabalhe conosco!</h1>
+    <form>
+    <!--    <textarea type='text' id="content" value="" rows="10" cols="100"></textarea>
+        <br />
+        <select id ="users" name="userId"></select> -->
+        <label for="fistname">Nome:</label>
+        <input type='text' id="firstname" name="firstname" value="" /><br><br>
+        <label for="cpf">CPF:</label>
+        <input type='text' id="cpf" name="cpf" value="" />  
+        <label for="nascimento">Data de nascimento:</label>
+        <input type='text' id="nascimento" name="nascimento" value="" /> 
+        <label for="telefone">Telefone:</label>
+        <input type='text' id="telefone" name="telefone" value="" /> 
+        <label for="profissao">Profissão:</label>
+        <input type='text' id="profissao" name="profissao" value="" /> 
+        <label for="escolaridade">Escolaridade:</label>
+        <input type='text' id="escolaridade" name="escolaridade" value="" />
+        <label for="habilidade">Habilidades:</label>
+        <input type='text' id="habilidade" name="habilidade" value="" />
+        <input type='button' value="Enviar" onclick="Users.add()" />
+    </form>
+    <form>
+        <input type='text' id="campobusca" name="campobusca" value="" />
+        <input type='button' value="Buscar" onclick="Posts.findOne()" />
+    </form>
+    <select id="combo1">
+        <option>Selecione</option>
+    </select>
+    <input type='button' value="Enviar" onclick="Posts.findOne()" />
+    <section>
+        <h2>Comentarios</h2>
+        <div id='comments'>
+        </div>
+    </section>
+</body>
+
+</html>
